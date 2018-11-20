@@ -1,3 +1,9 @@
 Repo created to test all things with Terraform. 
 
-At the moment we have the AWS provider. To have this working modify the file provider.tf and add the values for the variables of AWS access.
+The repo will ask you for the variables for the AWS access.
+
+If you don't want to put the info each time in the execution create a file with this variables:
+  - aws_secret_key
+  - aws_access_key
+And execute the terraform command like this "terraform plan -var-file=X.tfvars"
+
