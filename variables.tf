@@ -1,4 +1,4 @@
-variable "aws_key_id" {
+variable "aws_access_key" {
   type = "string"
 }
 
