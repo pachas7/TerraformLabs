@@ -6,6 +6,7 @@ variable "aws_secret_key" {
   type = "string"
 }
 
-variable "entrada" {
+variable "webpage" {
   type = "string"
+  default = "ola k ase"
 }
