@@ -19,6 +19,6 @@ resource "aws_instance" "web" {
   key_name = "Personal-JD"
   vpc_security_group_ids = ["${aws_security_group.allow_http.id}"]
   tags {
-    name = "PuppetMaster"
+    Name = "TerraformLabs"
   }
 }
