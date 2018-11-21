@@ -5,3 +5,7 @@ variable "aws_access_key" {
 variable "aws_secret_key" {
   type = "string"
 }
+
+variable "entrada" {
+  type = "string"
+}
