@@ -8,3 +8,4 @@ RUN apk update && \
     unzip /opt/terraform*.zip -d /opt/ && \
     git clone https://github.com/pachas7/TerraformLabs.git /opt/terraformlabs
     
+COPY ./aws_access /opt/terraformlabs/variables.tfvars
