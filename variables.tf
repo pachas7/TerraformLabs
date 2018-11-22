@@ -10,3 +10,8 @@ variable "webpage" {
   type = "string"
   default = "ola k ase"
 }
+
+variable "instance_type"{
+  type = "string"
+  default = "t2.micro"
+}
