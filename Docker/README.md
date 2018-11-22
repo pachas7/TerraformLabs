@@ -2,6 +2,6 @@ In this folder we have the docker files to have a quick terraform environment wi
 
 **COMMANDS
 
-  \* docker build -t terraformlabs . && \
+  ´´docker build -t terraformlabs . && \
   docker run --name terraformlabs -d -t terraformlabs && \
-  docker exec -it terraformlabs /bin/sh *\
+  docker exec -it terraformlabs /bin/sh ´´
