@@ -6,7 +6,7 @@ function start {
   docker build -t terraformlabs .
   docker run --name terraformlabs -d -t terraformlabs
   docker exec -it terraformlabs terraform init /opt/terraformlabs
-  docker exec -it terraformlabs terraform apply -var-file=/opt/terraformlabs/variables.tfvars -var 'webpage=$webpage' /opt/terraformlabs
+  docker exec -it terraformlabs terraform apply -var-file=/opt/terraformlabs/variables.tfvars -var 'webpage=$webpage' /opt/terraformlabs/
 }
 
 read -p "Did you write the AWS_access in variables.tfvars (y/n)?" choice
