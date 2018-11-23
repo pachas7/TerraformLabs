@@ -1,6 +1,6 @@
 #!/bin/bash
 
-start {
+function start {
   read -p "What do you want to show in your website?" webpage
   docker build -t terraformlabs .
   docker run --name terraformlabs -d -t terraformlabs
