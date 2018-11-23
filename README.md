@@ -8,3 +8,7 @@ If you don't want to put the info each time in the execution create a file with 
   
 And execute the terraform command like this "terraform plan -var-file=X.tfvars"
 
+**DOCKER
+
+There you have a folder to execute the terraformlab with a container
+
