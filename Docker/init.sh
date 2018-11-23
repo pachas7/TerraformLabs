@@ -1,11 +1,17 @@
 #!/bin/bash
 
-read -p "Put the Aws access_key: " access_key
-read -p "Put the Aws secret_key: " secret_key
+start {
+  docker build -t terraformlabs .
+  docker run --name terraformlabs -d -t terraformlabs
+  docker exec -it terraformlabs /bin/sh
+}
 
-echo 'aws_access_key="${access_key}"' >> ./.aws_access
-echo 'aws_secret_key="${secret_key}"' >> ./.aws_access
+read -p "Did you write the AWS_access in variables.tfvars (y/n)?" choice
+case "$choice" in 
+  y|Y ) start;;
+  n|N ) exit;;
+  * ) exit;;
+esac
 
-docker build -t terraformlabs .
-docker run --name terraformlabs -d -t terraformlabs
-docker exec -it terraformlabs /bin/sh
+
+
