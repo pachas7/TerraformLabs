@@ -8,7 +8,7 @@ variable "aws_secret_key" {
 
 variable "webpage" {
   type = "string"
-  default = "ola k ase"
+#  default = "ola k ase"
 }
 
 variable "instance_type"{
